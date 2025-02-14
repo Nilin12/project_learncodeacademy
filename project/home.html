@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LearnCode Academy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #ff97f3;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background: #f4f4f4;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .hero p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .hero .cta {
+            margin-top: 1rem;
+        }
+
+        .search-container {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .search-container input[type="text"] {
+            width: 100%;
+            padding: 10px 40px 10px 15px;
+            border: 2px solid #ff97f3;
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-container button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: #ff97f3;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .courses {
+            padding: 2rem;
+            background: #fff;
+        }
+
+        .course {
+            border: 1px solid #ddd;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .course h3 {
+            margin: 0 0 1rem;
+            font-size: 1.5rem;
+            color: #ff97f3;
+        }
+
+        .course p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        h1 {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><h1><a href="index.html">LearnCode Academy</a></h1></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Learn to Code with Interactive Lessons</h1>
+        <p>Get hands-on experience in Python, JavaScript, HTML, and more...</p>
+        <div class="cta">
+            <div class="search-container">
+                <input type="text" placeholder="Search tutorials: C, HTML, JavaScript...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h2>Featured Courses</h2>
+        <div class="course">
+            <h3>Introduction to Python</h3>
+            <p>Learn Python basics and build your first project.</p>
+            <button>Enroll Now</button>
+        </div>
+        <div class="course">
+            <h3>Build Your First Website</h3>
+            <p>Learn HTML, CSS, and JavaScript to create your personal website.</p>
+            <button>Enroll Now</button>
+        </div>
+        <div class="course">
+            <h3>Master JavaScript</h3>
+            <p>Take your JavaScript skills to the next level with advanced topics.</p>
+            <button>Enroll Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LearnCode Academy | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
