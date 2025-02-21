@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - LearnCode Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        button {
+        width: 100%;
+        padding: 12px;
+        background: #04AA6D;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+        button:hover {
+            background: #039e5a;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .login-link a {
+            color: #04AA6D;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">LearnCode Academy</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html">หน้าแรก</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">คอร์สเรียน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tutorials.html">บทเรียน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="certificates.html">ใบรับรอง</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="community.html">ชุมชน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard.html">แดชบอร์ด</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signin.html">เข้าสู่ระบบ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h1 class="fw-bold">เข้าร่วมการปฏิวัติการเขียนโค้ด 🚀</h1>
+        <p>พร้อมปลดล็อกศักยภาพของคุณหรือยัง? มาเป็นส่วนหนึ่งของชุมชนการเรียนรู้ของเรา และเริ่มต้นเส้นทางสู่การเชี่ยวชาญทักษะที่สำคัญในอนาคต!</p>
+        <p>เริ่มเรียนรู้ สร้างโปรเจ็กต์ และเชื่อมต่อกับผู้เชี่ยวชาญ โอกาสไม่มีที่สิ้นสุด ก้าวแรกของคุณเริ่มต้นที่นี่</p>
+    </section>
+    <div class="form-container">
+        <form action="/action_page.php" method="post">
+            <label for="name">ชื่อ-นามสกุล</label>
+            <input type="text" id="name" name="name" placeholder="กรอกชื่อ-นามสกุลของคุณ" required>
+
+            <label for="email">ที่อยู่อีเมล</label>
+            <input type="email" id="email" name="email" placeholder="กรอกอีเมลของคุณ" required>
+
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" id="password" name="password" placeholder="สร้างรหัสผ่าน" required>
+
+            <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="ยืนยันรหัสผ่านของคุณ" required>
+
+            <button type="submit">สมัครสมาชิก</button>
+        </form>
+        <div class="login-link">
+            <p>มีบัญชีอยู่แล้ว? <a href="signin.html">เข้าสู่ระบบที่นี่</a></p>
+        </div>
+    </div>
+</body>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 border-bottom border-md-0 border-end">
+                    <h5><b>Subjects</b></h5>
+                    <ul class="list-unstyled">
+                        <li>AI</li>
+                        <li>Cloud computing</li>
+                        <li>Code foundations</li>
+                        <li>Computer science</li>
+                        <li>Cybersecurity</li>
+                        <li>Data analytics</li>
+                        <li>Data science</li>
+                        <li>Data visualization</li>
+                        <li>Developer tools</li>
+                        <li>DevOps</li>
+                        <li>Game development</li>
+                        <li>IT</li>
+                        <li>Machine learning</li>
+                        <li>Math</li>
+                        <li>Mobile development</li>
+                        <li>Web design</li>
+                        <li>Web development</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-bottom border-md-0 border-end">
+                    <h5><b>Languages</b></h5>
+                    <ul class="list-unstyled">
+                        <li>Bash</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Go</li>
+                        <li>HTML & CSS</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Kotlin</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>Ruby</li>
+                        <li>SQL</li>
+                        <li>Swift</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-bottom border-md-0">
+                    <h5><b>Career Building</b></h5>
+                    <ul class="list-unstyled">
+                        <li>Career paths</li>
+                        <li>Career center</li>
+                        <li>Interview prep</li>
+                        <li>Professional certification</li>
+                        <li>Compare to bootcamps</li>
+                        <li>Full catalog</li>
+                        <li>Beta content</li>
+                        <li>Roadmap</li>
+                    </ul>
+                    <h5><b>Contact</b></h5>
+                    <div>
+                        <img src="images/Instagram_icon.png.webp" alt="Instargram" width="30">
+                        <img src="images/2021_Facebook_icon.svg.png" alt="Facebook" width="30">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>Privacy Policy | Cookie Policy | Do Not Sell My Personal Information | Terms</p>
+                <p>&copy; 2024 LearnCode Academy | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>LearnCode Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    .carousel img {
+        height: 650px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .carousel-caption {
+        background: rgba(90, 134, 185, 0.6);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a.icon {
+        float: right;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        text-align: right;
+    }
+
+    .active {   
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="index.html" class="active">LearnCode Academy</a>
+            <div id="myLinks">
+                <a href="home.html">หน้าแรก</a>
+                <a href="courses.html">คอร์สเรียน</a>
+                <a href="tutorials.html">บทเรียน</a>
+                <a href="certificates.html">ใบรับรอง</a>
+                <a href="contact.html">ติดต่อ</a>
+                <a href="community.html">ชุมชน</a>
+                <a href="dashboard.html">แดชบอร์ด</a>
+                <a href="signin.html">เข้าสู่ระบบ</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        </script>
+   <section class="hero">
+    <h1 class="fw-bold">ยินดีต้อนรับสู่ LearnCode Academy – ก้าวสู่ความเป็นเลิศทางเทคโนโลยี 🚀</h1>
+    <p>พร้อมหรือยังที่จะเปิดโลกการเขียนโค้ดและเปลี่ยนอนาคตของคุณ? ที่ LearnCode Academy เรามีคอร์สเรียนที่สอนโดยผู้เชี่ยวชาญ โปรเจกต์จริง และชุมชนที่พร้อมสนับสนุนคุณในการเรียนรู้ด้านโปรแกรมมิ่ง พัฒนาเว็บ AI ความปลอดภัยไซเบอร์ และอื่น ๆ อีกมากมาย!</p>
+</section>
+
+<div id="courseCarousel" class="carousel slide container my-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="course1.html">
+                <img src="images/top-10-websites-to-learn-programming-in-2020.webp" class="d-block w-100" alt="คอร์ส 1">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5> ทำไมต้องเรียนกับเรา?</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="course2.html">
+                <img src="images/1705567341575.png" class="d-block w-100" alt="คอร์ส 2">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5> คอร์สตั้งแต่ระดับเริ่มต้นจนถึงขั้นสูง เหมาะกับทุกระดับทักษะ</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="course3.html">
+                <img src="images/1646-GDU-Learn_to_Code_Blog_Header_.width-1300.png" class="d-block w-100" alt="คอร์ส 3">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5> โปรเจกต์จริงที่ช่วยให้คุณสร้างพอร์ตโฟลิโอ</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="course4.html">
+                <img src="images/learn-coding-online-for-free.webp" class="d-block w-100" alt="คอร์ส 4">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>เรียนได้ตามจังหวะของคุณด้วยบทเรียนเชิงโต้ตอบ</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="course5.html">
+                <img src="images/feature_coding.png" class="d-block w-100" alt="คอร์ส 5">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>🔥 เริ่มเรียนรู้วันนี้และสร้างอนาคตในสายเทคโนโลยี! 🚀</h5>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+</body>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 border-bottom border-md-0 border-end">
+                    <h5><b>Subjects</b></h5>
+                    <ul class="list-unstyled">
+                        <li>AI</li>
+                        <li>Cloud computing</li>
+                        <li>Code foundations</li>
+                        <li>Computer science</li>
+                        <li>Cybersecurity</li>
+                        <li>Data analytics</li>
+                        <li>Data science</li>
+                        <li>Data visualization</li>
+                        <li>Developer tools</li>
+                        <li>DevOps</li>
+                        <li>Game development</li>
+                        <li>IT</li>
+                        <li>Machine learning</li>
+                        <li>Math</li>
+                        <li>Mobile development</li>
+                        <li>Web design</li>
+                        <li>Web development</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-bottom border-md-0 border-end">
+                    <h5><b>Languages</b></h5>
+                    <ul class="list-unstyled">
+                        <li>Bash</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Go</li>
+                        <li>HTML & CSS</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Kotlin</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>Ruby</li>
+                        <li>SQL</li>
+                        <li>Swift</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-bottom border-md-0">
+                    <h5><b>Career Building</b></h5>
+                    <ul class="list-unstyled">
+                        <li>Career paths</li>
+                        <li>Career center</li>
+                        <li>Interview prep</li>
+                        <li>Professional certification</li>
+                        <li>Compare to bootcamps</li>
+                        <li>Full catalog</li>
+                        <li>Beta content</li>
+                        <li>Roadmap</li>
+                    </ul>
+                    <h5><b>Contact</b></h5>
+                    <div>
+                        <img src="images/Instagram_icon.png.webp" alt="Instargram" width="30">
+                        <img src="images/2021_Facebook_icon.svg.png" alt="Facebook" width="30">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>Privacy Policy | Cookie Policy | Do Not Sell My Personal Information | Terms</p>
+                <p>&copy; 2024 LearnCode Academy | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</html>

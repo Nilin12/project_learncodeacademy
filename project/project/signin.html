@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ - LearnCode Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(237, 237, 246);
+        }
+    :root {
+        --primary-color: #04AA6D;
+        --danger-color: #f44336;
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .login-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: rgb(252, 252, 253);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .avatar-container {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .form-control {
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .btn-primary:hover {
+        opacity: 0.9;
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .btn-danger {
+        background-color: var(--danger-color);
+        border-color: var(--danger-color);
+    }
+
+    .form-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+
+    .signup-link {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .signup-link a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .signup-link a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons img {
+        margin-right: 1rem;
+        transition: opacity 0.2s;
+    }
+
+    .social-icons img:hover {
+        opacity: 0.8;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">LearnCode Academy</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html">หน้าแรก</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">คอร์สเรียน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tutorials.html">บทเรียน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="certificates.html">ใบรับรอง</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="community.html">ชุมชน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard.html">แดชบอร์ด</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signin.html">เข้าสู่ระบบ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>พร้อมเขียนโค้ดแล้วหรือยัง? 🔥</h1>
+        <p>ได้รับประสบการณ์จริงใน Python, JavaScript, HTML และอื่นๆ เข้าสู่ระบบเพื่อเข้าถึงคอร์สเรียนของคุณ ติดตามความคืบหน้า และเชื่อมต่อกับผู้เชี่ยวชาญ</p>
+    </section>
+
+    <main class="container">
+        <form class="login-form" action="/action_page.php" method="post">
+            <div class="avatar-container">
+                <img src="images/image.png" alt="อวตารผู้ใช้" class="avatar">
+            </div>
+    
+            <div class="mb-3">
+                <label for="username" class="form-label">ชื่อผู้ใช้</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="password" class="form-label">รหัสผ่าน</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                <label class="form-check-label" for="remember">จดจำฉัน</label>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
+    
+            <div class="signup-link">
+                <p>ยังไม่มีบัญชี? <a href="signup.html">สมัครสมาชิกที่นี่</a></p>
+            </div>
+    
+            <div class="form-footer">
+                <button type="button" class="btn btn-danger">ยกเลิก</button>
+                <a href="#" class="text-decoration-none">ลืมรหัสผ่าน?</a>
+            </div>
+        </form>
+    </main>
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 border-bottom border-md-0 border-end">
+                    <h5><b>Subjects</b></h5>
+                    <ul class="list-unstyled">
+                        <li>AI</li>
+                        <li>Cloud computing</li>
+                        <li>Code foundations</li>
+                        <li>Computer science</li>
+                        <li>Cybersecurity</li>
+                        <li>Data analytics</li>
+                        <li>Data science</li>
+                        <li>Data visualization</li>
+                        <li>Developer tools</li>
+                        <li>DevOps</li>
+                        <li>Game development</li>
+                        <li>IT</li>
+                        <li>Machine learning</li>
+                        <li>Math</li>
+                        <li>Mobile development</li>
+                        <li>Web design</li>
+                        <li>Web development</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-bottom border-md-0 border-end">
+                    <h5><b>Languages</b></h5>
+                    <ul class="list-unstyled">
+                        <li>Bash</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Go</li>
+                        <li>HTML & CSS</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Kotlin</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>Ruby</li>
+                        <li>SQL</li>
+                        <li>Swift</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-bottom border-md-0">
+                    <h5><b>Career Building</b></h5>
+                    <ul class="list-unstyled">
+                        <li>Career paths</li>
+                        <li>Career center</li>
+                        <li>Interview prep</li>
+                        <li>Professional certification</li>
+                        <li>Compare to bootcamps</li>
+                        <li>Full catalog</li>
+                        <li>Beta content</li>
+                        <li>Roadmap</li>
+                    </ul>
+                    <h5><b>Contact</b></h5>
+                    <div>
+                        <img src="images/Instagram_icon.png.webp" alt="Instargram" width="30">
+                        <img src="images/2021_Facebook_icon.svg.png" alt="Facebook" width="30">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>Privacy Policy | Cookie Policy | Do Not Sell My Personal Information | Terms</p>
+                <p>&copy; 2024 LearnCode Academy | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

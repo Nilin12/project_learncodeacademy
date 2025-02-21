@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>บทเรียน - LearnCode Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+         body {
+            background-color: #f8f9fa;
+        }
+        .course-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+        .rating {
+            color: gold;
+        }
+    .search-container {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%; 
+        padding: 10px 40px 10px 15px;
+        border: 2px solid rgb(171, 196, 235);
+        border-radius: 25px;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .search-container button {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        color: rgb(171, 196, 235);
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    h1 {
+        color: #fff;
+    }
+</style>
+</head>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">LearnCode Academy</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html">หน้าแรก</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">คอร์สเรียน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tutorials.html">บทเรียน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="certificates.html">ใบรับรอง</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="community.html">ชุมชน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard.html">แดชบอร์ด</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signin.html">เข้าสู่ระบบ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h1 class="fw-bold">เรียนรู้การเขียนโค้ดด้วยบทเรียนแบบอินเทอร์แอคทีฟ</h1>
+        <p>รับประสบการณ์การเรียนรู้ Python, JavaScript, HTML และอื่น ๆ...</p>
+        <div class="cta">
+            <div class="search-container">
+                <input type="text" placeholder="ค้นหาบทเรียน: C, HTML, JavaScript...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">คอร์สยอดนิยม</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="images/html-css.jpg" class="card-img-top" alt="HTML & CSS">
+                    <div class="card-body">
+                        <h5 class="card-title">พื้นฐาน HTML & CSS</h5>
+                        <p class="card-text">เรียนรู้พื้นฐานการออกแบบเว็บไซต์และสร้างเว็บไซต์ที่สวยงาม</p>
+                        <span class="badge bg-primary">ระดับเริ่มต้น</span>
+                        <p class="mt-2 rating">⭐⭐⭐⭐⭐ (4.9/5)</p>
+                        <button class="btn btn-success">เริ่มเรียนรู้</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="images/java.jpg" class="card-img-top" alt="JavaScript">
+                    <div class="card-body">
+                        <h5 class="card-title">พื้นฐาน JavaScript</h5>
+                        <p class="card-text">เรียนรู้หลักการพื้นฐานของ JavaScript และพัฒนาเว็บแอปพลิเคชันแบบอินเทอร์แอคทีฟ</p>
+                        <span class="badge bg-warning">ระดับกลาง</span>
+                        <p class="mt-2 rating">⭐⭐⭐⭐ (4.7/5)</p>
+                        <button class="btn btn-success">เริ่มเรียนรู้</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="images/python.webp" class="card-img-top" alt="Python">
+                    <div class="card-body">
+                        <h5 class="card-title">Python สำหรับผู้เริ่มต้น</h5>
+                        <p class="card-text">เริ่มต้นเส้นทางการเขียนโค้ดของคุณด้วยภาษา Python</p>
+                        <span class="badge bg-danger">ฟรี</span>
+                        <p class="mt-2 rating">⭐⭐⭐⭐⭐ (5.0/5)</p>
+                        <button class="btn btn-success">เริ่มเรียนรู้</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="images/medium_React_Fundamentals_56e32fd939.png" class="card-img-top" alt="React">
+                    <div class="card-body">
+                        <h5 class="card-title">พื้นฐาน React</h5>
+                        <p class="card-text">เรียนรู้การสร้าง UI ที่รวดเร็วและอินเทอร์แอคทีฟด้วย React</p>
+                        <span class="badge bg-info">ระดับกลาง</span>
+                        <p class="mt-2 rating">⭐⭐⭐⭐⭐ (4.8/5)</p>
+                        <button class="btn btn-success">เริ่มเรียนรู้</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="images/django.jpg" class="card-img-top" alt="Django">
+                    <div class="card-body">
+                        <h5 class="card-title">การพัฒนาเว็บด้วย Django</h5>
+                        <p class="card-text">สร้างเว็บแอปพลิเคชันที่มีประสิทธิภาพด้วย Django</p>
+                        <span class="badge bg-success">ระดับสูง</span>
+                        <p class="mt-2 rating">⭐⭐⭐⭐ (4.6/5)</p>
+                        <button class="btn btn-success">เริ่มเรียนรู้</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="images/webpack.png" alt="Webpack">
+                    <div class="card-body">
+                        <h5 class="card-title">Webpak Mastery</h5>
+                        <p class="card-text">เรียนรู้วิธีการเพิ่มประสิทธิภาพและบันเดิล JavaScript ของคุณด้วย Webpack</p>
+                        <span class="badge bg-warning">ระดับกลาง</span>
+                        <p class="mt-2 rating">⭐⭐⭐⭐ (4.5/5)</p>
+                        <button class="btn btn-success">เริ่มเรียนรู้</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </body>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 border-bottom border-md-0 border-end">
+                    <h5><b>หมวดหมู่</b></h5>
+                    <ul class="list-unstyled">
+                        <li>ปัญญาประดิษฐ์</li>
+                        <li>คลาวด์คอมพิวติ้ง</li>
+                        <li>พื้นฐานการเขียนโค้ด</li>
+                        <li>วิทยาการคอมพิวเตอร์</li>
+                        <li>ความปลอดภัยทางไซเบอร์</li>
+                        <li>การวิเคราะห์ข้อมูล</li>
+                        <li>วิทยาศาสตร์ข้อมูล</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-bottom border-md-0 border-end">
+                    <h5><b>ภาษาโปรแกรม</b></h5>
+                    <ul class="list-unstyled">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-bottom border-md-0">
+                    <h5><b>ติดต่อเรา</b></h5>
+                    <div>
+                        <img src="images/Instagram_icon.png.webp" alt="Instagram" width="30">
+                        <img src="images/2021_Facebook_icon.svg.png" alt="Facebook" width="30">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>นโยบายความเป็นส่วนตัว | คุกกี้ | ข้อกำหนดการใช้งาน</p>
+                <p>&copy; 2024 LearnCode Academy | สงวนลิขสิทธิ์</p>
+            </div>
+        </div>
+    </footer>
+    
